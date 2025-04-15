@@ -29,5 +29,5 @@ drag & drop screenshots here or use imgur and reference them using imgsrc
 Every screenshot should have some text explaining what the screenshot is about.
 
 Example below.
-
+![Figure 1  A simple network diagram](images/Figure 1 Simple Network.png)
 *Ref 1: Network Diagram*
