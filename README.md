@@ -2,25 +2,26 @@
 # Secure Network Devices
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+This project aimed to provide hands-on experience in securing network devices using Cisco Packet Tracer as a simulation tool. It focused on configuring authentication for routers and switches, implementing DHCP for efficient IP management, and enforcing security measures to protect switch ports from unauthorized access and potential threats. This hands-on project was designed to enhance practical knowledge and strengthen understanding of network security.
+
+
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+- Configuring authentication on network devices (routers and switches)
+- Implementing DHCP for efficient IP management.
+- Securing switch ports to mitigate security threats.
+- Utilizing Cisco Packet Tracer for network simulation and troubleshooting.
+- Advanced understanding of network security concepts, best practices, and practical applications.
+
 
 ### Tools Used
 
-- Cisco Packet Tracer
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- Cisco Packet Tracer (Network simulation software).
+- Router and Switch configurations (CLI-based security settings)
+- Networking protocols (Authentication, DHCP, and security best practices).
+
 
 ## Walkthrough
 drag & drop screenshots here or use imgur and reference them using imgsrc
