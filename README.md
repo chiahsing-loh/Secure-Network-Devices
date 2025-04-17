@@ -35,7 +35,7 @@ Figure 1 A simple network diagram
 <br>
 <br>
 <br>
-![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%201%20Simple%20Network.png?raw=true)
+![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/LFS101-Course-Badge-1-300x300.jpg?raw=true)
 
 
 
