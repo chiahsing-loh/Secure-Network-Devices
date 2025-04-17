@@ -32,4 +32,4 @@ Example below:
 
 ![The San Juan Mountains are beautiful!](/assets/images/san-juan-mountains.jpg "San Juan Mountains")
 
-![Figure 1](/images/Figure 1 Simple Network.png)
+![Figure 1][(/images/Figure 1 Simple Network.png)](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/Figure%201%20Simple%20Network.png?raw=true)
