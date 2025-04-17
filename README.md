@@ -24,18 +24,20 @@ This project aimed to provide hands-on experience in securing network devices us
 
 
 ## Walkthrough
-drag & drop screenshots here or use imgur and reference them using imgsrc
+
 
 Every screenshot should have some text explaining what the screenshot is about.
 
 Example below:
 
 ![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/Figure%201%20Simple%20Network.png?raw=true) <br>
-Figure 1 A simple network diagram 
-<br>
-<br>
-<br>
-![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/LFS101-Course-Badge-1-300x300.jpg?raw=true)
+Figure 1 A simple network diagram
+\
+\
+\
+\
+![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/LFS101-Course-Badge-1-300x300.jpg?raw=true)\
+Figure 2 Linux Badge sample
 
 
 
