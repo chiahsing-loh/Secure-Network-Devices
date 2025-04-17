@@ -32,7 +32,7 @@ Example below:
 
 ![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/Figure%201%20Simple%20Network.png?raw=true)
 
-
+![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/Figure%201%20Simple%20Network.png?raw=true)
 
 
 
