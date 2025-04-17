@@ -30,6 +30,10 @@ Every screenshot should have some text explaining what the screenshot is about.
 
 Example below:
 
-![The San Juan Mountains are beautiful!](/assets/images/san-juan-mountains.jpg "San Juan Mountains")
+![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/Figure%201%20Simple%20Network.png?raw=true)
 
-![Figure 1][(/images/Figure 1 Simple Network.png)](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/Figure%201%20Simple%20Network.png?raw=true)
+
+
+
+
+
