@@ -30,9 +30,12 @@ Every screenshot should have some text explaining what the screenshot is about.
 
 Example below:
 
-![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/Figure%201%20Simple%20Network.png?raw=true)
-
-![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/Figure%201%20Simple%20Network.png?raw=true)
+![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/Figure%201%20Simple%20Network.png?raw=true) <br>
+Figure 1 A simple network diagram 
+<br>
+<br>
+<br>
+![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%201%20Simple%20Network.png?raw=true)
 
 
 
