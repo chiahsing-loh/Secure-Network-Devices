@@ -135,14 +135,36 @@ Figure 9: Setting up a password for Router0
 |conf t |enters global configuration mode.|
 |line console 0 |configures the console line, which is used for local management access to the router via the console port.|
 |login |enables login authentication for the console line.|
-|password cisco |sets the password for the console line to "cisco".|
+|password cisco  |sets the password for the console line to "cisco".|
 |exit |exits the console line configuration mode.
 |exit |exits global configuration mode.|
 
 
+The command <line console 0> refers to the console port, allowing configuration of its login settings.
+
+The error message "% Login disabled on line 0, until 'password' is set" indicates that a password must be configured before login can be enabled. 
+
+We had set "cisco" as the password required for accessing the console line during future login attempts.
+
+The above console line configuration successfully enabled login authentication for the router console line. The plaintext password "cisco" was configured, allowing access to Router0's CLI via the console.
 
 
+Figure 10: Encrypting password of Router0
 
+|Command	|Purpose|
+|---------|-------|
+|en | moves the session from user EXEC mode (Router>) to privileged EXEC mode (Router#) to execute higher-level commands, including configuration commands.|
+|conf t |enters global configuration mode.|
+|enable secret cisxo |sets the enable secret password to "cisxo".|
+|exit |exits global configuration mode, returning to privileged EXEC mode (Router#).|
+|exit |logs out the user from the router CLI and makes the console available for the next session.|
+
+The command <enable secret cisxo> stores the password "cisxo" in an encrypted format, making it far more secure against unauthorized access to privileged EXEC mode.
+
+
+Next, as a practice, we will change the passwords to "orange" for both the console access and privileged EXEC mode. The configuration changes are detailed in Figure 11.
+
+Figure 11: Changing password and encrypting it on Router0
 
 
 
