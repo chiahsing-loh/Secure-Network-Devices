@@ -21,11 +21,13 @@ This project aimed to provide hands-on experience securing network devices using
 - Cisco Packet Tracer (Network simulation software).
 - Router and Switch configurations (CLI-based security settings)
 - Networking protocols (Authentication, DHCP, and security best practices). 
-<b/r>
-<b/r>
-<b/r>
-<b/r>
-<b/r>## Walkthrough
+</div>
+</br>
+
+
+
+ 
+### Walkthrough
 
 This project will consist of 5 tasks, which are as follows:
 1. Create your network topology using Cisco Packet Tracer
@@ -33,7 +35,8 @@ This project will consist of 5 tasks, which are as follows:
 3. Apply authentication on the router in your network topology
 4. Make different PCs from different VLANs communicate with each other
 5. Configure DHCP on your router and secure the ports of the switch from attackers
-
+</div>
+</br>
 
 
 
