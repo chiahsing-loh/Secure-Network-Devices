@@ -100,7 +100,7 @@ Figure 5: Encrypted password of Switch0
 The above figure shows the resulting configuration:
 - The plaintext enable password was removed, thereby improving security.
 - The password apple was being encrypted into "$1$mERr$KA3NlZC09aPz89f9oGpKe1"
-- The switch now uses the encrypted enable secret password for privileged EXEC mode access.
+- The switch uses the encrypted enable secret password for privileged EXEC mode access.
 
 Security Perspective:
 By replacing the <enable password> with the encrypted <enable secret>, switch0 is more secure against attacks that rely on password cracking or interception. This is a key best practice for securing access to a network or network devices.
@@ -162,17 +162,95 @@ Figure 10: Encrypting password of Router0
 The command <enable secret cisxo> stores the password "cisxo" in an encrypted format, making it far more secure against unauthorized access to privileged EXEC mode.
 
 
-Next, as a practice, we will change the passwords to "orange" for both the console access and privileged EXEC mode. The configuration changes are detailed in Figure 11.
+Next, we will change the passwords to "orange" for both console access and privileged EXEC mode as a practice. The configuration changes are detailed in Figure 11.
 
 Figure 11: Changing password and encrypting it on Router0
 
 
+#### Task 4: Enable PCs from different VLANs to communicate with each other
+
+Static IP Configuration - assigning of a unique IP address to a network device.
+
+We will be assigning static IP addresses to the respective PCs on the network as per the table below:
+
+|PC  |IPv4 Address	|Subnet Mask	|VLAN	|Default Gateway|
+|----|--------------|-------------|-----|---------------|
+|PC0|	10.10.10.1|	255.255.255.0|	10|	10.10.10.254|
+|PC1|	10.10.10.2|	255.255.255.0|	10|	10.10.10.254|
+|PC2|	10.10.20.1|	255.255.255.0|	20|	10.10.20.254|
+|PC3|	10.10.20.2|	255.255.255.0|	20|	10.10.20.254|
 
 
+Figure 12: Accessing IP configuration via the Desktop interface on PC0
+
+Figure 13:  Initial IP configuration of PC0
+
+Figure 14: Static assigned IP configuration of PC0 on VLAN 10
+
+Figure 15: Static assigned IP configuration of PC2 on VLAN 20
+
+We will repeat the same steps to configure both the IPv4 addresses and Default Gateway for PC1, PC2, and PC3.
+
+With the current IP address configuration, only PCs in the same VLAN are able to communicate with each other. 
+For PCs to be able to communicate with PCs on another VLAN, a router would be needed.
+
+We shall now test the connectivity between PCs on the same VLAN.
+
+Figure 16: Test connectivity result of PC0 on VLAN 10 and VLAN 20
+
+As evidenced by the successful ping, PC0 (10.10.10.1) is able to establish a connection with PC1 (10.10.10.2) on VLAN 10. 
+However,  PC0 (10.10.10.1) is unable to do so with PC2 (10.10.20.1) on VLAN 20 due to network segmentation.
+
+We shall now attempt to fix this by establishing connectivity between the 2 VLANs.
+
+First, we will need to configure Switch0.
+
+Figure 17: Configuring Switch0
 
 
+|Command	|Purpose|
+|---------|-------|
+|en |moves the session from user EXEC mode (Switch>) to privileged EXEC mode (Switch#) to execute higher-level commands, including configuration commands.|
+|conf t |enters global configuration mode, allowing system-wide changes to the switch’s settings.|
+|int fa0/1 |enters the interface configuration mode for FastEthernet0/1 (fa0/1) which connects to PC0.|
+|switchport mode access |sets FastEthernet0/1 (fa0/1) to access mode. Access mode is used for connecting end devices and it ensures that port fa0/1 can only carry traffic for a single VLAN.|
+|switchport access vlan 10 |assigns FastEthernet0/1 (fa0/1)  to VLAN 10.|
+|int fa0/2 |enters the interface configuration mode for FastEthernet0/2 (fa0/2) which connects to PC1.|
+|switchport mode access |sets FastEthernet0/2 (fa0/2) to access mode.| 
+|switchport access vlan 10 |assigns FastEthernet0/2 (fa0/2)  to VLAN 10.|
+|int fa0/3 |enters the interface configuration mode for FastEthernet0/3 (fa0/3).|
+|Switchport mode trunk |configures FastEthernet0/3 as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
 
 
+Key Takeaways
+VLAN Segmentation:
+- Ports FastEthernet0/1 and FastEthernet0/2 only carry VLAN 10 traffic
+- The trunk port (FastEthernet0/3) allows multiple VLANs to communicate across switches.
+
+Access vs. Trunk Mode:
+- Access ports are meant for end devices like PCs, servers, and printers.
+- Trunk ports are used for network devices such as switch-to-switch connections.
+
+Network Security & Efficiency
+- VLANs reduce broadcast domains, improving network efficiency.
+- Trunking ensures VLAN communication while maintaining segmentation.
+
+Next, we shall configure Router0 to establish connectivity between Switch0 and Router0.
+
+Figure 18: Configuring Router0
+
+|Command	|Purpose|
+|---------|-------|
+|en |moves the session from user EXEC mode (Router>) to privileged EXEC mode (Router#) to execute higher-level commands, including configuration commands.|
+|conf t |enters global configuration mode, allowing system-wide changes to the switch’s settings.|
+|int gig0/0 |enters the interface configuration mode for GigabitEthernet0/0 (gig0/0) which connects to Switch0.|
+|no shut |activates the GigabitEthernet0/0 (gig0/0) interface out of an administratively shut-down (disabled) state when the router is first configured.|
+|int gig0/0.10 |creates and moves to sub interface GigabitEthernet0/0.10 (the ".10" represents VLAN 10 traffic). Sub-interfaces are logical divisions of a physical interface. They allow a single physical interface to handle traffic from multiple VLANs|
+|encapsulation dot1q 10 |configures 802.1Q encapsulation for VLAN 10 on the sub interface GigabitEthernet0/0.10. 802.1Q is the protocol used to tag Ethernet frames with VLAN information. This command specifies that this sub-interface handles traffic for VLAN 10. When the router receives frames tagged with VLAN 10, they are routed using this sub-interface.|
+|ip address 10.10.10.254 255.255.255.0 |assigns an IP address and subnet mask to the sub-interface. 10.10.10.254 is the default gateway for VLAN 10. Devices in VLAN 10 will use this address to route traffic beyond their local network. 255.255.255.0 (subnet mask) indicates that VLAN 10 uses the /24 network, which supports up to 254 hosts.|
+|switchport access vlan 10 |assigns FastEthernet0/2 (fa0/2)  to VLAN 10.|
+|int fa0/3 |enters the interface configuration mode for FastEthernet0/3 (fa0/3).|
+|Switchport mode trunk |configures FastEthernet0/3 as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
 
 
 
