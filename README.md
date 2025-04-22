@@ -119,10 +119,25 @@ Figure 7: Encrypted password of Switch1
 ![Figure 7](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%207%20Encrypted%20password%20of%20Switch1.png)
 
 
+#### Task 3: Apply authentication on the router
+
+In this task, we will install a router model 2911 between Switch0 and Switch1. A router is a key network device on any network topology, and we will implement password authentication as an access control measure.
+
+Figure 8: Network topology with Router0
 
 
+Figure 9: Setting up a password for Router0
 
 
+|Command	|Purpose|
+|---------|-------|
+|en |moves the session from user EXEC mode (Router>) to privileged EXEC mode (Router#) in order to execute higher-level commands, including configuration commands.|
+|conf t |enters global configuration mode.|
+|line console 0 |configures the console line, which is used for local management access to the router via the console port.|
+|login |enables login authentication for the console line.|
+|password cisco |sets the password for the console line to "cisco".|
+|exit |exits the console line configuration mode.
+|exit |exits global configuration mode.|
 
 
 
