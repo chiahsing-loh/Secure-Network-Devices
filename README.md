@@ -55,10 +55,12 @@ To assign the password 'apple' to switch0 in privileged EXEC mode via the switch
 |enable password	|defines a new password or changes an existing password for access to privileged EXEC mode.|
 |exit	|exits current mode (global configuration or privileged EXEC)|
 
+Figure 2: Setting a password for Switch0
 
 
+The following commands are used to verify and view the password set for switch0:
 
-
+Figure 3: Verification of password at Switch0
 
 \
 \
