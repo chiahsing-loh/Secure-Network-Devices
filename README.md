@@ -46,7 +46,11 @@ Authentication is the process of providing access control for systems by checkin
 
 To implement network security on this topology, we should enable passwords for the network devices to prevent unauthorized users from accessing this network.
 
-To assign the password 'apple' to switch0 in privileged EXEC mode via the switch0 using the following CLI commands:
+We will use the following commands to assign the password 'apple' to switch0 in privileged EXEC mode:
+
+Figure 2: Setting a password for Switch0
+
+![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%202%20Setting%20a%20password%20for%20Switch0.png)
 
 |Command	|Purpose|
 |---------|--------|
@@ -54,9 +58,7 @@ To assign the password 'apple' to switch0 in privileged EXEC mode via the switch
 |conf t	|enters global configuration mode to configure the switch's settings and make administrative changes.|
 |enable password	|defines a new password or changes an existing password for access to privileged EXEC mode.|
 |exit	|exits current mode (global configuration or privileged EXEC)|
-
-Figure 2: Setting a password for Switch0
-
+</br>
 
 The following commands are used to verify and view the password set for switch0:
 
