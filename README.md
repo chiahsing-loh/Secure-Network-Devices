@@ -24,24 +24,24 @@ This project aimed to provide hands-on experience securing network devices using
 ### Walkthrough
 
 This project will consist of 5 tasks, which are as follows:
-1. Create your network topology using Cisco Packet Tracer
-2. Apply authentication on the switches in your network topology
-3. Apply authentication on the router in your network topology
-4. Make different PCs from different VLANs communicate with each other
-5. Configure DHCP on your router and secure the ports of the switch from attackers
+1. Create a network topology using Cisco Packet Tracer
+2. Apply authentication on the switches
+3. Apply authentication on the router
+4. Enable PCs from different VLANs to communicate with each other
+5. Configure DHCP on the router and secure the ports of the switch from attackers
 </div>
 </br>
 
 
 
-#### Task 1: Create your network topology using Cisco Packet Tracer
+#### Task 1: Create a network topology using Cisco Packet Tracer
 We will use Cisco Packet Tracer to design and create a network topology that consists of 2 switches connected with 2 PCs each, as in Figure 1. 
 
 Figure 1
 ![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%201.png)
 </br></br></br>
 
-#### Task 2: Apply authentication on the switches in your network topology
+#### Task 2: Apply authentication on the switches
 Authentication is the process of providing access control for systems by checking to see if a user's credentials match the credentials in the database of authorized users.
 
 To implement network security on this topology, we should enable passwords for the network devices to prevent unauthorized users from accessing this network.
