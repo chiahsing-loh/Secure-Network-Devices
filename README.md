@@ -20,10 +20,12 @@ This project aimed to provide hands-on experience securing network devices using
 
 - Cisco Packet Tracer (Network simulation software).
 - Router and Switch configurations (CLI-based security settings)
-- Networking protocols (Authentication, DHCP, and security best practices).
-
-
-## Walkthrough
+- Networking protocols (Authentication, DHCP, and security best practices). 
+<b/r>
+<b/r>
+<b/r>
+<b/r>
+<b/r>## Walkthrough
 
 This project will consist of 5 tasks, which are as follows:
 1. Create your network topology using Cisco Packet Tracer
@@ -34,13 +36,16 @@ This project will consist of 5 tasks, which are as follows:
 
 
 
+
 ### Task 1: Create your network topology using Cisco Packet Tracer
 We will use Cisco Packet Tracer to design and create a network topology that consists of 2 switches connected with 2 PCs each, as in Figure 1. 
 
-Figure 1 shows the overview of the topology.
-
-![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/LFS101-Course-Badge-1-300x300.jpg?raw=true)\
 Figure 1
+![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%201.png)
+
+
+
+### Task 2: Apply authentication on the switches in your network topology
 
 
 
@@ -48,18 +53,12 @@ Figure 1
 
 
 
-Every screenshot should have some text explaining what the screenshot is about.
-
-Example below:
-
-![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/Figure%201%20Simple%20Network.png?raw=true) <br>
-Figure 1 A simple network diagram
 \
 \
 \
 \
 ![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/LFS101-Course-Badge-1-300x300.jpg?raw=true)\
-Figure 2 Linux Badge sample
+Figure 2: Linux Badge sample
 
 
 
