@@ -84,7 +84,14 @@ We will now seek to rectify this to an encrypted password through the following 
 
 Figure 4: Encrypting password of Switch0
 
-![Figure 4](
+![Figure 4](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%204%20Encrypting%20password%20of%20Switch0.png)
+
+|Command	|Purpose|
+|---------|--------|
+|no enable password |removes the existing plaintext password stored in a configuration file.|
+|enable secret |defines a secret password and encrypts it.|
+
+
 
 
 
