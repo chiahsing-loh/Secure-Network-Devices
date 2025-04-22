@@ -82,7 +82,9 @@ The implemented password protection served as a simple way of providing terminal
 
 We will now seek to rectify this to an encrypted password through the following steps:
 
-Fig 4
+Figure 4: Encrypting password of Switch0
+
+![Figure 4](
 
 
 
@@ -107,8 +109,7 @@ Fig 4
 \
 \
 \
-![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/LFS101-Course-Badge-1-300x300.jpg?raw=true)\
-Figure 2: Linux Badge sample
+
 
 
 
