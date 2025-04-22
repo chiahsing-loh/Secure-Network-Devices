@@ -25,6 +25,12 @@ This project aimed to provide hands-on experience in securing network devices us
 
 ## Walkthrough
 
+This project will consist of 5 tasks, they are as follows:
+Task 1: Create your network topology using Cisco packet tracer
+Task 2: Apply authentication on the switches in your network topology
+Task 3: Apply authentication on the router in your network topology
+Task 4: Make different PCs from different VLANs communicate with each other
+Task 5: Configure DHCP on your router and secure the ports of the switch from the attackers
 
 Every screenshot should have some text explaining what the screenshot is about.
 
