@@ -42,7 +42,18 @@ Figure 1
 </br></br></br>
 
 #### Task 2: Apply authentication on the switches in your network topology
+Authentication is the process of providing access control for systems by checking to see if a user's credentials match the credentials in the database of authorized users.
 
+To implement network security on this topology, we should enable passwords for the network devices to prevent unauthorized users from accessing this network.
+
+To assign the password 'apple' to switch0 in privileged EXEC mode via the switch0 using the following CLI commands:
+
+|Command	|Purpose|
+|---------|--------|
+|en 	|enables privileged EXEC mode to execute higher-level commands and access device configurations.|
+|conf t	|enters global configuration mode to configure the switch's settings and make administrative changes.|
+|enable password	|defines a new password or changes an existing password for access to privileged EXEC mode.|
+|exit	|exits current mode (global configuration or privileged EXEC)|
 
 
 
