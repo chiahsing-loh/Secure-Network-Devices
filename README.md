@@ -39,8 +39,8 @@ We will use Cisco Packet Tracer to design and create a network topology that con
 
 Figure 1 shows the overview of the topology.
 
-
-
+![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/LFS101-Course-Badge-1-300x300.jpg?raw=true)\
+Figure 1
 
 
 
