@@ -116,7 +116,7 @@ Figure 6: Setting up encrypted password for Switch1
 
 Figure 7: Encrypted password of Switch1
 
-![Figure 7](
+![Figure 7](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%207%20Encrypted%20password%20of%20Switch1.png)
 
 
 
@@ -137,10 +137,7 @@ Figure 7: Encrypted password of Switch1
 
 
 
-\
-\
-\
-\
+
 
 
 
