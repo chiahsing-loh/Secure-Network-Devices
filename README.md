@@ -91,6 +91,9 @@ Figure 4: Encrypting password of Switch0
 |no enable password |removes the existing plaintext password stored in a configuration file.|
 |enable secret |defines a secret password and encrypts it.|
 
+The <no enable password> command will disable the existing , less secure plaintext password for accessing the privileged EXEC mode. The <enable secret> command is a more secure, encrypted password for privileged EXEC mode. It will supersede the <enable password> if both are configured. Using encryption provides a much better protection against unauthorized access.
+
+Figure 5: Encrypted password of Switch0
 
 
 
