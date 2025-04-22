@@ -28,7 +28,7 @@ This project will consist of 5 tasks, which are as follows:
 2. Apply authentication on the switches
 3. Apply authentication on the router
 4. Enable PCs from different VLANs to communicate with each other
-5. Configure DHCP on the router and secure the ports of the switch from attackers
+5. Configure DHCP on the router and secure the ports of the switch from unauthorized access
 </div>
 </br>
 
@@ -251,6 +251,46 @@ Figure 18: Configuring Router0
 |switchport access vlan 10 |assigns FastEthernet0/2 (fa0/2)  to VLAN 10.|
 |int fa0/3 |enters the interface configuration mode for FastEthernet0/3 (fa0/3).|
 |Switchport mode trunk |configures FastEthernet0/3 as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
+
+The commands for establishing connectivity between Switch1 and Router0 are as follows:
+
+Figure 19:Configuration Switch1
+
+Figure 20: Configuration of Router0 to establish connectivity with Switch1
+
+Connectivity test for PCs within the same VLAN 10:
+
+Figure 21: 
+
+Connectivity test for PCs within the same VLAN 20:
+
+Figure 22: 
+
+Connectivity test from PC0 on VLAN 10 to PC2 (10.10.20.1) and PC3 (10.10.20.2)  on VLAN 20:
+
+Figure 23: 
+
+Connectivity test from PC2 on VLAN 20 to PC0 (10.10.10.1) and PC1 (10.10.10.2)  on VLAN 10:
+
+Figure 24: 
+
+The connectivity tests concluded that:
+	1. PCs on the same VLAN can communicate with each other.
+	2. PCs on VLAN 10 can communicate with PCs on VLAN 20.
+
+
+#### Task 5: Configure DHCP on the router and secure the ports of the switch from unauthorized access
+
+
+
+
+
+
+
+
+
+
+
 
 
 
