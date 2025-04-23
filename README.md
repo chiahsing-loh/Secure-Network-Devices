@@ -256,7 +256,9 @@ Network Security & Efficiency
 
 Next, we shall configure Router0 to establish connectivity between Switch0 and Router0.
 
-Figure 18: Configuring Router0
+Figure 18: Configuring Router0 </br>
+![f18](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2018%20Configuring%20Router0.png)
+
 
 |Command|Purpose|
 |-------|-------|
