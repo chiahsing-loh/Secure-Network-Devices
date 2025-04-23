@@ -334,6 +334,16 @@ Figure 32: Configuring port fa0/2 on Switch0
 
 |Command|Purpose|
 |-------|-------|
+|en |moves the session from user EXEC mode (Switch>) to privileged EXEC mode (Switch#) to execute higher-level commands, including configuration commands.|
+|conf t|enters global configuration mode, allowing system-wide changes to the switch’s settings.|
+|int fa0/2|enters the interface configuration mode for FastEthernet0/2 (fa0/2) which connects to PC1.|
+|switchport port-security|port security on FastEthernet0/2. Port security allows control over which devices can connect to the port, preventing unauthorized access.|
+|switchport port-security maximum 1|limits the number of devices that can connect to this port to 1. If a second device is plugged into FastEthernet0/2, the switch considers it unauthorized.|
+|switchport port-security violation shutdown|defines the action to take when a violation occurs. If an unauthorized device is detected, the switch will automatically shut down the port, preventing unauthorized access.|
+|switchport port-security mac-address sticky|defines the switch to dynamically learns the MAC address of the first device connected to FastEthernet0/2. This MAC address is then automatically stored in the switch’s configuration. If another device attempts to connect, a security violation occurs.|
+|switchport access vlan 10|assigns FastEthernet0/2 (fa0/2)  to VLAN 10.|
+|int fa0/3|enters the interface configuration mode for FastEthernet0/3 (fa0/3).|
+|Switchport mode trunk|configures FastEthernet0/3 as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
 
 
 
