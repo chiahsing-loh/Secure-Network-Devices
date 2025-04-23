@@ -2,11 +2,11 @@
 # Secure Network Devices
 </br>
 
-### Objective
+### <ins>Objective</ins>
 
 This project aimed to provide hands-on experience securing network devices using Cisco Packet Tracer as a simulation tool. It focused on configuring authentication for routers and switches, implementing DHCP for efficient IP management, and enforcing security measures to protect switch ports from unauthorized access and potential threats. This hands-on project was designed to enhance practical knowledge and strengthen understanding of network security.
 </br></br>
-### Skills Learned
+### <ins>Skills Learned</ins>
 
 - Configuring authentication on network devices (routers and switches)
 - Implementing DHCP for efficient IP management.
@@ -14,14 +14,14 @@ This project aimed to provide hands-on experience securing network devices using
 - Utilizing Cisco Packet Tracer for network simulation and troubleshooting.
 - Advanced understanding of network security concepts, best practices, and practical applications.
 </br></br>
-### Tools Used
+### <ins>Tools Used</ins>
 
 - Cisco Packet Tracer (Network simulation software).
 - Router and Switch configurations (CLI-based security settings)
 - Networking protocols (Authentication, DHCP, and security best practices). 
 </br></br>
 
-### Walkthrough
+### <ins>Walkthrough</ins>
 
 This project will consist of 5 tasks, which are as follows:
 1. Create a network topology using Cisco Packet Tracer
@@ -34,7 +34,7 @@ This project will consist of 5 tasks, which are as follows:
 
 
 
-#### Task 1: Create a network topology using Cisco Packet Tracer
+#### <ins>Task 1: Create a network topology using Cisco Packet Tracer</ins>
 We will use Cisco Packet Tracer to design and create a network topology that consists of 2 switches connected with 2 PCs each, as in Figure 1. 
 
 Figure 1
@@ -168,7 +168,10 @@ The command <enable secret cisxo> stores the password "cisxo" in an encrypted fo
 
 Next, we will change the passwords to "orange" for both console access and privileged EXEC mode as a practice. The configuration changes are detailed in Figure 11.
 
-Figure 11: Changing password and encrypting it on Router0
+Figure 11: Changing password and encrypting it on Router0 </br>
+![f11](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2011%20Changing%20password%20and%20encrypting%20it%20on%20Router0.png)
+ </br> </br> </br>
+
 
 
 #### Task 4: Enable PCs from different VLANs to communicate with each other
