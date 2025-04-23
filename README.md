@@ -254,7 +254,7 @@ Figure 18: Configuring Router0
 
 The commands for establishing connectivity between Switch1 and Router0 are as follows:
 
-Figure 19:Configuration Switch1
+Figure 19: Configuration Switch1
 
 Figure 20: Configuration of Router0 to establish connectivity with Switch1
 
