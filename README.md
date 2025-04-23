@@ -201,6 +201,8 @@ Figure 14: Static assigned IP configuration of PC0 on VLAN 10
 
 
 Figure 15: Static assigned IP configuration of PC2 on VLAN 20
+![f15](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2015%20Static%20assigned%20IP%20configuration%20of%20PC2%20on%20VLAN%2020.png)
+
 
 We will repeat the same steps to configure both the IPv4 addresses and Default Gateway for PC1, PC2, and PC3.
 
