@@ -299,6 +299,7 @@ Figure 23: Connectivity test from PC0 to PC2 and PC3</br>
 Connectivity test from PC2 on VLAN 20 to PC0 (10.10.10.1) and PC1 (10.10.10.2)  on VLAN 10:
 
 Figure 24: Connectivity test from PC2 to PC0 and PC1</br>
+![f24](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2024%20Connectivity%20test%20from%20PC2%20to%20PC0%20and%20PC1.png)</br>
 
 These connectivity tests concluded that:
 1. PCs on the same VLAN can communicate with each other.
