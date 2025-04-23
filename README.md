@@ -128,6 +128,8 @@ Figure 8: Network topology with Router0
 
 Figure 9: Setting up a password for Router0
 
+![f9](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%209%20Setting%20up%20a%20password%20for%20Router0.png)
+
 
 |Command	|Purpose|
 |---------|-------|
