@@ -295,18 +295,45 @@ Figure 25: Configuring DHCP protocol on Router0
 |network 10.10.10.0 255.255.255.0|defines the range that the DHCP pool will assign. 10.10.10.0 is the network ID of the subnet. 255.255.255.0 is the subnet mask, indicating that the IP range is 10.10.10.1 to 10.10.10.254 (excluding 10.10.10.0, the network address). Devices requesting DHCP will receive IP addresses dynamically within this range.|
 |exit|exits the DHCP configuration mode, returning to global configuration mode|
 
+Once DHCP was configured, Router0 would dynamically assigns an IP addresses from the 10.10.10.0/24 subnet when a device requests an IP address.
+
+Changing IP configuration from static allocation to DHCP allocation on PC0:
 
 
+Figure 26: Current IP configuration for PC0
+
+Figure 27: IP configuration for PC0 using  DHCP
+
+Similarly, DHCP configuration was made to PC1 as depicted in Figure 28.
+
+Figure 28: IP configuration for PC1 using  DHCP
 
 
+Suppose there is an attempt by an attacker looking to get information from this network and destroy it subsequently. For the attempt, this attacker uses laptop0 to connect to port fa0/2 on Switch0 as depicted in Figure 29.
 
 
+Figure 29: Network topology showing unauthorized access by an attacker via Laptop0
 
 
+Using Laptop0, the attacker managed to get a dynamically assigned IP address using DHCP configuration.
+
+Figure 30: Attacker's Laptop0 IP configuration using DHCP.
+
+The attacker uses the "ping" command to test his unauthorized access and manages to establish a successful connection with PC0 as shown in Figure 31.
+
+Figure 31: Connectivity achieved by attacker's Laptop0
 
 
+As a preventive measure for such unauthorized attack on a network, we must configure the ports of the switches to be secured from such attack through the following steps.
 
+We only wanted to have 1 PC to access Switch0 via fa0/2 port.
 
+The commands entered configure port security on FastEthernet0/2 to restrict unauthorized access and enhance network security.
+
+Figure 32: Configuring port fa0/2 on Switch0
+
+|Command|Purpose|
+|-------|-------|
 
 
 
