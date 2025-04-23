@@ -197,6 +197,8 @@ Figure 13:  Initial IP configuration of PC0
 
 
 Figure 14: Static assigned IP configuration of PC0 on VLAN 10
+![f14](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2014%20Static%20assigned%20IP%20configuration%20of%20PC0%20on%20VLAN%2010.png)
+
 
 Figure 15: Static assigned IP configuration of PC2 on VLAN 20
 
