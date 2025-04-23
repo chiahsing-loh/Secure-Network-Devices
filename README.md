@@ -349,6 +349,7 @@ Figure 29: Network topology showing unauthorized access by an attacker via Lapto
 Using Laptop0, the attacker managed to get a dynamically assigned IP address using DHCP configuration.
 
 Figure 30: Attacker's Laptop0 IP configuration using DHCP</br>
+![f30](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2030%20Attacker's%20Laptop0%20IP%20configuration%20using%20DHCP.png)</br>
 
 The attacker uses the "ping" command to test his unauthorized access and establishes a successful connection with PC0, as shown in Figure 31.
 
