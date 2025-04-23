@@ -294,6 +294,7 @@ Figure 22: Connectivity test from PC3 to PC2 within same VLAN 20</br>
 Connectivity test from PC0 on VLAN 10 to PC2 (10.10.20.1) and PC3 (10.10.20.2)  on VLAN 20:
 
 Figure 23: Connectivity test from PC0 to PC2 and PC3</br>
+![f23](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2023%20Connectivity%20test%20from%20PC0%20to%20PC2%20and%20PC3.png)</br>
 
 Connectivity test from PC2 on VLAN 20 to PC0 (10.10.10.1) and PC1 (10.10.10.2)  on VLAN 10:
 
