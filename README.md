@@ -336,6 +336,7 @@ Figure 27: IP configuration for PC0 using DHCP</br>
 Similarly, DHCP configuration was made to PC1 as depicted in Figure 28.
 
 Figure 28: IP configuration for PC1 using DHCP</br>
+![f28](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2028%20IP%20configuration%20for%20PC1%20using%20DHCP.png)</br>
 
 
 Suppose an attacker attempts to get information from this network and aims to destroy it subsequently. For this attempt, the attacker uses laptop0 to connect to port fa0/2 on Switch0 as depicted in Figure 29.
