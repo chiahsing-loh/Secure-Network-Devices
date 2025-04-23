@@ -6,7 +6,7 @@
 
 This project aimed to provide hands-on experience securing network devices using Cisco Packet Tracer as a simulation tool. It focused on configuring authentication for routers and switches, implementing DHCP for efficient IP management, and enforcing security measures to protect switch ports from unauthorized access and potential threats. This hands-on project was designed to enhance practical knowledge and strengthen understanding of network security.
 </br></br>
-### <ins>Skills Learned</ins>
+### <ins>Skills Gained</ins>
 
 - Configuring authentication on network devices (routers and switches)
 - Implementing DHCP for efficient IP management.
@@ -14,7 +14,7 @@ This project aimed to provide hands-on experience securing network devices using
 - Utilizing Cisco Packet Tracer for network simulation and troubleshooting.
 - Advanced understanding of network security concepts, best practices, and practical applications.
 </br></br>
-### <ins>Tools Used</ins>
+### <ins>Tools</ins>
 
 - Cisco Packet Tracer (Network simulation software).
 - Router and Switch configurations (CLI-based security settings)
