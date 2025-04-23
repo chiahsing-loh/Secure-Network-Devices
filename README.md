@@ -354,7 +354,7 @@ Figure 30: Attacker's Laptop0 IP configuration using DHCP</br>
 The attacker uses the "ping" command to test his unauthorized access and establishes a successful connection with PC0, as shown in Figure 31.
 
 Figure 31: Connectivity achieved by attacker's Laptop0</br>
-
+![f31](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2031%20Connectivity%20achieved%20by%20attacker's%20Laptop0.png)</br>
 
 To prevent unauthorized access, we must secure the switches' ports through the following steps.
 
