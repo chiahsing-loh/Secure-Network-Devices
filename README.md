@@ -4,7 +4,7 @@
 
 ### <ins>Objective</ins>
 
-This project aimed to provide hands-on experience securing network devices using Cisco Packet Tracer as a simulation tool. It focused on configuring authentication for routers and switches, implementing DHCP for efficient IP management, and enforcing security measures to protect switch ports from unauthorized access and potential threats. This hands-on project was designed to enhance practical knowledge and strengthen understanding of network security.
+This project aimed to provide hands-on experience securing network devices using Cisco Packet Tracer as a simulation tool. It focused on configuring authentication for routers and switches, implementing DHCP for efficient IP address management, and enforcing security measures to protect switch ports from unauthorized access and potential threats. This hands-on project was designed to enhance practical knowledge and strengthen understanding of network security.
 </br></br>
 ### <ins>Skills Gained</ins>
 
@@ -37,14 +37,14 @@ This project will consist of 5 tasks, which are as follows:
 #### <ins>Task 1: Create a network topology using Cisco Packet Tracer</ins>
 We will use Cisco Packet Tracer to design and create a network topology that consists of 2 switches connected with 2 PCs each, as in Figure 1. 
 
-Figure 1
+Figure 1: A network topology consisting of switches and PCs
 ![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%201.png)
 </br></br></br>
 
 #### <ins>Task 2: Apply authentication on the switches</ins>
-Authentication is the process of providing access control for systems by checking to see if a user's credentials match the credentials in the database of authorized users.
+In network security, authentication is the process of verifying the identity of a user, device, or application attempting to access a network or system. This verification ensures that only authorized entities gain access to network resources, preventing unauthorized access and potential security breaches. 
 
-To implement network security on this topology, we should enable passwords for the network devices to prevent unauthorized users from accessing this network.
+To implement network security on this topology, we shall implement passwords for the network devices to prevent unauthorized users from accessing this network.
 
 We will use the following commands to assign the password 'apple' to switch0 in privileged EXEC mode:
 
