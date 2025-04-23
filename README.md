@@ -345,5 +345,13 @@ Figure 32: Configuring port fa0/2 on Switch0
 |int fa0/3|enters the interface configuration mode for FastEthernet0/3 (fa0/3).|
 |Switchport mode trunk|configures FastEthernet0/3 as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
 
+Similar security hardening was also made on port fa0/1 on Switch0:
+
+Figure 32: Configuring port fa0/1 on Switch0
+
+The above steps enhanced Switch0's port security by limiting access to specific devices, preventing MAC address spoofing attacks, and automatically shutting down unauthorized connections to it.
 
 
+A subsequent attempt to reconnect Laptop1 to port fa0/2 on Switch0 is unsuccessful. Hence, the access control on port fa0/2 of Switch0 has been strengthened against unauthorized access.
+
+Figure 33: Connectivity failure of attacker's Laptop1
