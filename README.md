@@ -193,6 +193,8 @@ Figure 12: Accessing IP configuration via the Desktop interface on PC0
 
 
 Figure 13:  Initial IP configuration of PC0
+![f13](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2013%20Initial%20IP%20configuration%20of%20PC0.png)
+
 
 Figure 14: Static assigned IP configuration of PC0 on VLAN 10
 
