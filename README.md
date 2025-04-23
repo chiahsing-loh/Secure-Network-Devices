@@ -279,9 +279,8 @@ These connectivity tests concluded that:
 2. PCs on VLAN 10 can communicate with PCs on VLAN 20.
 
 
+
 #### Task 5: Configure DHCP on the router and secure the ports of the switch from unauthorized access
-
-
 
 The following commands configure Dynamic Host Configuration Protocol (DHCP) on router0, allowing it to assign IP addresses dynamically to network devices. Let’s break down each step.
 
@@ -306,10 +305,10 @@ Figure 27: IP configuration for PC0 using  DHCP
 
 Similarly, DHCP configuration was made to PC1 as depicted in Figure 28.
 
-Figure 28: IP configuration for PC1 using  DHCP
+Figure 28: IP configuration for PC1 using DHCP
 
 
-Suppose there is an attempt by an attacker looking to get information from this network and destroy it subsequently. For the attempt, this attacker uses laptop0 to connect to port fa0/2 on Switch0 as depicted in Figure 29.
+Suppose an attacker attempts to get information from this network and aims to destroy it subsequently. For this attempt, the attacker uses laptop0 to connect to port fa0/2 on Switch0 as depicted in Figure 29.
 
 
 Figure 29: Network topology showing unauthorized access by an attacker via Laptop0
@@ -319,16 +318,16 @@ Using Laptop0, the attacker managed to get a dynamically assigned IP address usi
 
 Figure 30: Attacker's Laptop0 IP configuration using DHCP.
 
-The attacker uses the "ping" command to test his unauthorized access and manages to establish a successful connection with PC0 as shown in Figure 31.
+The attacker uses the "ping" command to test his unauthorized access and establishes a successful connection with PC0, as shown in Figure 31.
 
 Figure 31: Connectivity achieved by attacker's Laptop0
 
 
-As a preventive measure for such unauthorized attack on a network, we must configure the ports of the switches to be secured from such attack through the following steps.
+To prevent unauthorized access, we must secure the switches' ports through the following steps.
 
-We only wanted to have 1 PC to access Switch0 via fa0/2 port.
+In our network topology, we only want 1 PC to have access to Switch0 via port fa0/2.
 
-The commands entered configure port security on FastEthernet0/2 to restrict unauthorized access and enhance network security.
+Here are the commands to configure port security on port fa0/2 to prevent unauthorized access and enhance network security.
 
 Figure 32: Configuring port fa0/2 on Switch0
 
@@ -349,9 +348,9 @@ Similar security hardening was also made on port fa0/1 on Switch0:
 
 Figure 32: Configuring port fa0/1 on Switch0
 
-The above steps enhanced Switch0's port security by limiting access to specific devices, preventing MAC address spoofing attacks, and automatically shutting down unauthorized connections to it.
+The above steps enhanced Switch0's port security by limiting access to specific devices, preventing MAC address spoofing attacks, and automatically shutting down unauthorized access.
 
 
-A subsequent attempt to reconnect Laptop1 to port fa0/2 on Switch0 is unsuccessful. Hence, the access control on port fa0/2 of Switch0 has been strengthened against unauthorized access.
+A subsequent attempt to reconnect Laptop1 to port fa0/2 on Switch0 is denied. Hence, the access control made on Switch0 port fa0/2 has been strengthened against unauthorized access.
 
-Figure 33: Connectivity failure of attacker's Laptop1
+Figure 33: Failed connectivity of attacker's Laptop1
