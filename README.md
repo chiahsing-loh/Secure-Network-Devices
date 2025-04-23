@@ -1,5 +1,5 @@
 
-# Secure Network Devices
+# Securing Network Devices
 </br>
 
 ### <ins>Objective</ins>
