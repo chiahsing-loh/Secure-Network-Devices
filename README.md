@@ -328,6 +328,7 @@ Changing IP configuration from static allocation to DHCP allocation on PC0:
 
 
 Figure 26: Current IP configuration for PC0</br>
+![f26](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2026%20Current%20IP%20configuration%20for%20PC0.png)</br>
 
 Figure 27: IP configuration for PC0 using DHCP</br>
 
