@@ -222,7 +222,9 @@ We shall now attempt to fix this by establishing connectivity between the 2 VLAN
 
 First, we will need to configure Switch0.
 
-Figure 17: Configuring Switch0
+Figure 17: Configuring Switch0 </br>
+![f17](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2017%20Configuring%20Switch0.png)
+
 
 
 |Command	|Purpose|
