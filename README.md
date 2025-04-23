@@ -389,3 +389,4 @@ The above steps enhanced Switch0's port security by limiting access to specific 
 A subsequent attempt to reconnect Laptop1 to port fa0/2 on Switch0 is denied. Hence, the access control made on Switch0 port fa0/2 has been strengthened against unauthorized access.
 
 Figure 34: Failed connectivity of attacker's Laptop1</br>
+![f34](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2034%20Failed%20connectivity%20of%20attacker's%20Laptop1.png)</br>
