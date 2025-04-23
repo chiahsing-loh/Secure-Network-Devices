@@ -304,7 +304,7 @@ Figure 24: Connectivity test from PC2 to PC0 and PC1</br>
 These connectivity tests concluded that:
 1. PCs on the same VLAN can communicate with each other.
 2. PCs on VLAN 10 can communicate with PCs on VLAN 20.
-
+ </br> </br> </br>
 
 
 #### <ins>Task 5: Configure DHCP on the router and secure the ports of the switch from unauthorized access</ins>
@@ -312,6 +312,7 @@ These connectivity tests concluded that:
 The following commands configure Dynamic Host Configuration Protocol (DHCP) on router0, allowing it to assign IP addresses dynamically to network devices. Let’s break down each step.
 
 Figure 25: Configuring DHCP protocol on Router0</br>
+![f25](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2025%20Configuring%20DHCP%20protocol%20on%20Router0.png)</br>
 
 |Command|Purpose|
 |-------|-------|
