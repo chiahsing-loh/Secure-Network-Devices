@@ -275,7 +275,8 @@ Figure 18: Configuring Router0 </br>
 
 The commands for establishing connectivity between Switch1 and Router0 are as follows:
 
-Figure 19: Configuration Switch1
+Figure 19: Configuration Switch1 </br>
+![f19](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2019%20Configuration%20Switch1.png)</br>
 
 Figure 20: Configuration of Router0 to establish connectivity with Switch1
 
