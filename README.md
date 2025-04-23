@@ -258,25 +258,25 @@ Figure 19: Configuration Switch1
 
 Figure 20: Configuration of Router0 to establish connectivity with Switch1
 
-Connectivity test for PCs within the same VLAN 10:
+Connectivity test performed on PCs within the same network segment VLAN 10:
 
-Figure 21: 
+Figure 21: Connectivity test from PC1 to PC0 within same VLAN 10
 
-Connectivity test for PCs within the same VLAN 20:
+Connectivity test performed on PCs within the same network segment VLAN 20:
 
-Figure 22: 
+Figure 22: Connectivity test from PC3 to PC2 within same VLAN 20
 
 Connectivity test from PC0 on VLAN 10 to PC2 (10.10.20.1) and PC3 (10.10.20.2)  on VLAN 20:
 
-Figure 23: 
+Figure 23: Connectivity test from PC0 to PC2 and PC3
 
 Connectivity test from PC2 on VLAN 20 to PC0 (10.10.10.1) and PC1 (10.10.10.2)  on VLAN 10:
 
-Figure 24: 
+Figure 24: Connectivity test from PC2 to PC0 and PC1
 
-The connectivity tests concluded that:
-	1. PCs on the same VLAN can communicate with each other.
-	2. PCs on VLAN 10 can communicate with PCs on VLAN 20.
+These connectivity tests concluded that:
+1. PCs on the same VLAN can communicate with each other.
+2. PCs on VLAN 10 can communicate with PCs on VLAN 20.
 
 
 #### Task 5: Configure DHCP on the router and secure the ports of the switch from unauthorized access
