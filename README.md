@@ -381,6 +381,7 @@ Figure 32: Configuring port fa0/2 on Switch0</br>
 Similar security hardening was also made on port fa0/1 on Switch0:
 
 Figure 33: Configuring port fa0/1 on Switch0</br>
+![f33](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2033%20Configuring%20port%20fa01%20on%20Switch0.png)</br>
 
 The above steps enhanced Switch0's port security by limiting access to specific devices, preventing MAC address spoofing attacks, and automatically shutting down unauthorized access.
 
