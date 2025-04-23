@@ -331,6 +331,7 @@ Figure 26: Current IP configuration for PC0</br>
 ![f26](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2026%20Current%20IP%20configuration%20for%20PC0.png)</br>
 
 Figure 27: IP configuration for PC0 using DHCP</br>
+![f27](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2027%20IP%20configuration%20for%20PC0%20using%20%20DHCP.png)</br>
 
 Similarly, DHCP configuration was made to PC1 as depicted in Figure 28.
 
