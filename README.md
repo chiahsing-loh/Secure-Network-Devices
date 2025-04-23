@@ -189,6 +189,8 @@ We will be assigning static IP addresses to the respective PCs on the network as
 
 
 Figure 12: Accessing IP configuration via the Desktop interface on PC0
+![f12](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2012%20Accessing%20IP%20configuration%20via%20the%20Desktop%20interface%20on%20PC0.png)
+
 
 Figure 13:  Initial IP configuration of PC0
 
