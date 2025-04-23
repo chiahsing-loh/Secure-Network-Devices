@@ -363,6 +363,7 @@ In our network topology, we only want 1 PC to have access to Switch0 via port fa
 Here are the commands to configure port security on port fa0/2 to prevent unauthorized access and enhance network security.
 
 Figure 32: Configuring port fa0/2 on Switch0</br>
+![f32](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2032%20Configuring%20port%20fa02%20on%20Switch0.png)</br>
 
 |Command|Purpose|
 |-------|-------|
