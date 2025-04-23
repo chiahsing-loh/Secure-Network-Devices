@@ -211,7 +211,9 @@ For PCs to be able to communicate with PCs on another VLAN, a router would be ne
 
 We shall now test the connectivity between PCs on the same VLAN.
 
-Figure 16: Test connectivity result of PC0 on VLAN 10 and VLAN 20
+Figure 16: Test connectivity result of PC0 on VLAN 10 and VLAN 20 </br>
+![f16](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2016%20Test%20connectivity%20result%20of%20PC0%20on%20VLAN%2010%20and%20VLAN%2020.png)
+
 
 As evidenced by the successful ping, PC0 (10.10.10.1) is able to establish a connection with PC1 (10.10.10.2) on VLAN 10. 
 However,  PC0 (10.10.10.1) is unable to do so with PC2 (10.10.20.1) on VLAN 20 due to network segmentation.
