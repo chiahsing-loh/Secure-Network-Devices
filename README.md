@@ -151,7 +151,9 @@ We had set "cisco" as the password required for accessing the console line durin
 The above console line configuration successfully enabled login authentication for the router console line. The plaintext password "cisco" was configured, allowing access to Router0's CLI via the console.
 
 
-Figure 10: Encrypting password of Router0
+Figure 10: Encrypting password of Router0 </br>
+![f10](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2010%20Encrypting%20password%20of%20Router0.png)
+
 
 |Command	|Purpose|
 |---------|-------|
