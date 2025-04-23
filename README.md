@@ -278,23 +278,24 @@ The commands for establishing connectivity between Switch1 and Router0 are as fo
 Figure 19: Configuration Switch1 </br>
 ![f19](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2019%20Configuration%20Switch1.png)</br>
 
-Figure 20: Configuration of Router0 to establish connectivity with Switch1
+Figure 20: Configuration of Router0 to establish connectivity with Switch1</br>
+![f20](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2020%20Configuration%20of%20Router0%20to%20establish%20connectivity%20with%20Switch1.png)</br>
 
 Connectivity test performed on PCs within the same network segment VLAN 10:
 
-Figure 21: Connectivity test from PC1 to PC0 within same VLAN 10
+Figure 21: Connectivity test from PC1 to PC0 within same VLAN 10</br>
 
 Connectivity test performed on PCs within the same network segment VLAN 20:
 
-Figure 22: Connectivity test from PC3 to PC2 within same VLAN 20
+Figure 22: Connectivity test from PC3 to PC2 within same VLAN 20</br>
 
 Connectivity test from PC0 on VLAN 10 to PC2 (10.10.20.1) and PC3 (10.10.20.2)  on VLAN 20:
 
-Figure 23: Connectivity test from PC0 to PC2 and PC3
+Figure 23: Connectivity test from PC0 to PC2 and PC3</br>
 
 Connectivity test from PC2 on VLAN 20 to PC0 (10.10.10.1) and PC1 (10.10.10.2)  on VLAN 10:
 
-Figure 24: Connectivity test from PC2 to PC0 and PC1
+Figure 24: Connectivity test from PC2 to PC0 and PC1</br>
 
 These connectivity tests concluded that:
 1. PCs on the same VLAN can communicate with each other.
@@ -306,7 +307,7 @@ These connectivity tests concluded that:
 
 The following commands configure Dynamic Host Configuration Protocol (DHCP) on router0, allowing it to assign IP addresses dynamically to network devices. Let’s break down each step.
 
-Figure 25: Configuring DHCP protocol on Router0
+Figure 25: Configuring DHCP protocol on Router0</br>
 
 |Command|Purpose|
 |-------|-------|
@@ -321,28 +322,28 @@ Once DHCP was configured, Router0 would dynamically assigns an IP addresses from
 Changing IP configuration from static allocation to DHCP allocation on PC0:
 
 
-Figure 26: Current IP configuration for PC0
+Figure 26: Current IP configuration for PC0</br>
 
-Figure 27: IP configuration for PC0 using DHCP
+Figure 27: IP configuration for PC0 using DHCP</br>
 
 Similarly, DHCP configuration was made to PC1 as depicted in Figure 28.
 
-Figure 28: IP configuration for PC1 using DHCP
+Figure 28: IP configuration for PC1 using DHCP</br>
 
 
 Suppose an attacker attempts to get information from this network and aims to destroy it subsequently. For this attempt, the attacker uses laptop0 to connect to port fa0/2 on Switch0 as depicted in Figure 29.
 
 
-Figure 29: Network topology showing unauthorized access by an attacker via Laptop0
+Figure 29: Network topology showing unauthorized access by an attacker via Laptop0</br>
 
 
 Using Laptop0, the attacker managed to get a dynamically assigned IP address using DHCP configuration.
 
-Figure 30: Attacker's Laptop0 IP configuration using DHCP
+Figure 30: Attacker's Laptop0 IP configuration using DHCP</br>
 
 The attacker uses the "ping" command to test his unauthorized access and establishes a successful connection with PC0, as shown in Figure 31.
 
-Figure 31: Connectivity achieved by attacker's Laptop0
+Figure 31: Connectivity achieved by attacker's Laptop0</br>
 
 
 To prevent unauthorized access, we must secure the switches' ports through the following steps.
@@ -351,7 +352,7 @@ In our network topology, we only want 1 PC to have access to Switch0 via port fa
 
 Here are the commands to configure port security on port fa0/2 to prevent unauthorized access and enhance network security.
 
-Figure 32: Configuring port fa0/2 on Switch0
+Figure 32: Configuring port fa0/2 on Switch0</br>
 
 |Command|Purpose|
 |-------|-------|
@@ -368,11 +369,11 @@ Figure 32: Configuring port fa0/2 on Switch0
 
 Similar security hardening was also made on port fa0/1 on Switch0:
 
-Figure 33: Configuring port fa0/1 on Switch0
+Figure 33: Configuring port fa0/1 on Switch0</br>
 
 The above steps enhanced Switch0's port security by limiting access to specific devices, preventing MAC address spoofing attacks, and automatically shutting down unauthorized access.
 
 
 A subsequent attempt to reconnect Laptop1 to port fa0/2 on Switch0 is denied. Hence, the access control made on Switch0 port fa0/2 has been strengthened against unauthorized access.
 
-Figure 34: Failed connectivity of attacker's Laptop1
+Figure 34: Failed connectivity of attacker's Laptop1</br>
