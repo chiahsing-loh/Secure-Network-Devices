@@ -301,7 +301,7 @@ Changing IP configuration from static allocation to DHCP allocation on PC0:
 
 Figure 26: Current IP configuration for PC0
 
-Figure 27: IP configuration for PC0 using  DHCP
+Figure 27: IP configuration for PC0 using DHCP
 
 Similarly, DHCP configuration was made to PC1 as depicted in Figure 28.
 
@@ -316,7 +316,7 @@ Figure 29: Network topology showing unauthorized access by an attacker via Lapto
 
 Using Laptop0, the attacker managed to get a dynamically assigned IP address using DHCP configuration.
 
-Figure 30: Attacker's Laptop0 IP configuration using DHCP.
+Figure 30: Attacker's Laptop0 IP configuration using DHCP
 
 The attacker uses the "ping" command to test his unauthorized access and establishes a successful connection with PC0, as shown in Figure 31.
 
@@ -346,11 +346,11 @@ Figure 32: Configuring port fa0/2 on Switch0
 
 Similar security hardening was also made on port fa0/1 on Switch0:
 
-Figure 32: Configuring port fa0/1 on Switch0
+Figure 33: Configuring port fa0/1 on Switch0
 
 The above steps enhanced Switch0's port security by limiting access to specific devices, preventing MAC address spoofing attacks, and automatically shutting down unauthorized access.
 
 
 A subsequent attempt to reconnect Laptop1 to port fa0/2 on Switch0 is denied. Hence, the access control made on Switch0 port fa0/2 has been strengthened against unauthorized access.
 
-Figure 33: Failed connectivity of attacker's Laptop1
+Figure 34: Failed connectivity of attacker's Laptop1
