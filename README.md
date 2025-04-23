@@ -41,7 +41,7 @@ Figure 1
 ![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%201.png)
 </br></br></br>
 
-#### Task 2: Apply authentication on the switches
+#### <ins>Task 2: Apply authentication on the switches</ins>
 Authentication is the process of providing access control for systems by checking to see if a user's credentials match the credentials in the database of authorized users.
 
 To implement network security on this topology, we should enable passwords for the network devices to prevent unauthorized users from accessing this network.
@@ -119,7 +119,7 @@ Figure 7: Encrypted password of Switch1
 ![Figure 7](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%207%20Encrypted%20password%20of%20Switch1.png)
 
 
-#### Task 3: Apply authentication on the router
+#### <ins>Task 3: Apply authentication on the router</ins>
 
 In this task, we will install a router model 2911 between Switch0 and Switch1. A router is a key network device on any network topology, and we will implement password authentication as an access control measure.
 
@@ -174,7 +174,7 @@ Figure 11: Changing password and encrypting it on Router0 </br>
 
 
 
-#### Task 4: Enable PCs from different VLANs to communicate with each other
+#### <ins>Task 4: Enable PCs from different VLANs to communicate with each other</ins>
 
 Static IP Configuration - assigning of a unique IP address to a network device.
 
@@ -287,7 +287,7 @@ These connectivity tests concluded that:
 
 
 
-#### Task 5: Configure DHCP on the router and secure the ports of the switch from unauthorized access
+#### <ins>Task 5: Configure DHCP on the router and secure the ports of the switch from unauthorized access</ins>
 
 The following commands configure Dynamic Host Configuration Protocol (DHCP) on router0, allowing it to assign IP addresses dynamically to network devices. Let’s break down each step.
 
