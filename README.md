@@ -343,6 +343,7 @@ Suppose an attacker attempts to get information from this network and aims to de
 
 
 Figure 29: Network topology showing unauthorized access by an attacker via Laptop0</br>
+![f29](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2029%20Network%20topology%20showing%20unauthorized%20access%20by%20an%20attacker%20via%20laptop0.png)</br>
 
 
 Using Laptop0, the attacker managed to get a dynamically assigned IP address using DHCP configuration.
