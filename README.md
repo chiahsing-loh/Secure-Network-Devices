@@ -239,14 +239,14 @@ Next, we shall configure Router0 to establish connectivity between Switch0 and R
 
 Figure 18: Configuring Router0
 
-|Command	|Purpose|
-|---------|-------|
+|Command|Purpose|
+|-------|-------|
 |en |moves the session from user EXEC mode (Router>) to privileged EXEC mode (Router#) to execute higher-level commands, including configuration commands.|
 |conf t |enters global configuration mode, allowing system-wide changes to the switch’s settings.|
 |int gig0/0 |enters the interface configuration mode for GigabitEthernet0/0 (gig0/0) which connects to Switch0.|
 |no shut |activates the GigabitEthernet0/0 (gig0/0) interface out of an administratively shut-down (disabled) state when the router is first configured.|
 |int gig0/0.10 |creates and moves to sub interface GigabitEthernet0/0.10 (the ".10" represents VLAN 10 traffic). Sub-interfaces are logical divisions of a physical interface. They allow a single physical interface to handle traffic from multiple VLANs|
-|encapsulation dot1q 10 |configures 802.1Q encapsulation for VLAN 10 on the sub interface GigabitEthernet0/0.10. 802.1Q is the protocol used to tag Ethernet frames with VLAN information. This command specifies that this sub-interface handles traffic for VLAN 10. When the router receives frames tagged with VLAN 10, they are routed using this sub-interface.|
+|encapsulation dot1q 10|configures 802.1Q encapsulation for VLAN 10 on the sub interface GigabitEthernet0/0.10. 802.1Q is the protocol used to tag Ethernet frames with VLAN information. This command specifies that this sub-interface handles traffic for VLAN 10. When the router receives frames tagged with VLAN 10, they are routed using this sub-interface.|
 |ip address 10.10.10.254 255.255.255.0 |assigns an IP address and subnet mask to the sub-interface. 10.10.10.254 is the default gateway for VLAN 10. Devices in VLAN 10 will use this address to route traffic beyond their local network. 255.255.255.0 (subnet mask) indicates that VLAN 10 uses the /24 network, which supports up to 254 hosts.|
 |switchport access vlan 10 |assigns FastEthernet0/2 (fa0/2)  to VLAN 10.|
 |int fa0/3 |enters the interface configuration mode for FastEthernet0/3 (fa0/3).|
@@ -282,6 +282,18 @@ The connectivity tests concluded that:
 #### Task 5: Configure DHCP on the router and secure the ports of the switch from unauthorized access
 
 
+
+The following commands configure Dynamic Host Configuration Protocol (DHCP) on router0, allowing it to assign IP addresses dynamically to network devices. Let’s break down each step.
+
+Figure 25: Configuring DHCP protocol on Router0
+
+|Command|Purpose|
+|-------|-------|
+|en |moves the session from user EXEC mode (Router>) to privileged EXEC mode (Router#) to execute higher-level commands, including configuration commands.|
+|conf t|enters global configuration mode, allowing system-wide changes to the switch’s settings.|
+|ip dhcp pool 1|creates a DHCP pool named "1" for dynamic IP allocation. This pool name is arbitrary and could be any name or number. DHCP pools define how IP addresses are distributed across network devices.|
+|network 10.10.10.0 255.255.255.0|defines the range that the DHCP pool will assign. 10.10.10.0 is the network ID of the subnet. 255.255.255.0 is the subnet mask, indicating that the IP range is 10.10.10.1 to 10.10.10.254 (excluding 10.10.10.0, the network address). Devices requesting DHCP will receive IP addresses dynamically within this range.|
+|exit|exits the DHCP configuration mode, returning to global configuration mode|
 
 
 
