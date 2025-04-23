@@ -284,6 +284,7 @@ Figure 20: Configuration of Router0 to establish connectivity with Switch1</br>
 Connectivity test performed on PCs within the same network segment VLAN 10:
 
 Figure 21: Connectivity test from PC1 to PC0 within same VLAN 10</br>
+![f21](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2021%20Connectivity%20test%20from%20PC1%20to%20PC0%20within%20same%20VLAN%2010.png)</br>
 
 Connectivity test performed on PCs within the same network segment VLAN 20:
 
