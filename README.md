@@ -137,7 +137,7 @@ Figure 9: Setting up a password for Router0
 |conf t |enters global configuration mode.|
 |line console 0 |configures the console line, which is used for local management access to the router via the console port.|
 |login |enables login authentication for the console line.|
-|password cisco  |sets the password for the console line to "cisco".|
+|password cisco |sets the password for the console line to "cisco".|
 |exit |exits the console line configuration mode.
 |exit |exits global configuration mode.|
 
@@ -238,7 +238,7 @@ Figure 17: Configuring Switch0 </br>
 |switchport mode access |sets FastEthernet0/2 (fa0/2) to access mode.| 
 |switchport access vlan 10 |assigns FastEthernet0/2 (fa0/2)  to VLAN 10.|
 |int fa0/3 |enters the interface configuration mode for FastEthernet0/3 (fa0/3).|
-|Switchport mode trunk |configures FastEthernet0/3 as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
+|Switchport mode trunk |configures FastEthernet0/3 (fa0/3) as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
 
 
 Key Takeaways
@@ -271,7 +271,7 @@ Figure 18: Configuring Router0 </br>
 |ip address 10.10.10.254 255.255.255.0 |assigns an IP address and subnet mask to the sub-interface. 10.10.10.254 is the default gateway for VLAN 10. Devices in VLAN 10 will use this address to route traffic beyond their local network. 255.255.255.0 (subnet mask) indicates that VLAN 10 uses the /24 network, which supports up to 254 hosts.|
 |switchport access vlan 10 |assigns FastEthernet0/2 (fa0/2)  to VLAN 10.|
 |int fa0/3 |enters the interface configuration mode for FastEthernet0/3 (fa0/3).|
-|Switchport mode trunk |configures FastEthernet0/3 as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
+|Switchport mode trunk |configures FastEthernet0/3 (fa0/3) as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
 
 The commands for establishing connectivity between Switch1 and Router0 are as follows:
 
@@ -376,7 +376,7 @@ Figure 32: Configuring port fa0/2 on Switch0</br>
 |switchport port-security mac-address sticky|defines the switch to dynamically learns the MAC address of the first device connected to FastEthernet0/2. This MAC address is then automatically stored in the switch’s configuration. If another device attempts to connect, a security violation occurs.|
 |switchport access vlan 10|assigns FastEthernet0/2 (fa0/2)  to VLAN 10.|
 |int fa0/3|enters the interface configuration mode for FastEthernet0/3 (fa0/3).|
-|Switchport mode trunk|configures FastEthernet0/3 as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
+|Switchport mode trunk|configures FastEthernet0/3 (fa0/3) as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
 
 Similar security hardening was also made on port fa0/1 on Switch0:
 
