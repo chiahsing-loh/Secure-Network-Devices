@@ -53,7 +53,7 @@ Figure 2: Setting a password for Switch0
 ![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%202%20Setting%20a%20password%20for%20Switch0.png)
 
 |Command	|Purpose|
-|---------|--------|
+|:---------|:--------|
 |en 	|enables privileged EXEC mode to execute higher-level commands and access device configurations.|
 |conf t	|enters global configuration mode to configure the switch's settings and make administrative changes.|
 |enable password	|defines a new password or changes an existing password for access to privileged EXEC mode.|
@@ -71,7 +71,7 @@ This time round, when invoking the command 'en' to enter privileged EXEC mode, w
 After entering the correct password "apple", we will invoke the <show run> command to review the current configuration on Switch0.
 
 |Command	|Purpose|
-|---------|--------|
+|:---------|:--------|
 |show run	|displays the switch's current active settings and is used to review the applied configuration.|
 |control+Q	|returns immediately to the command prompt.|
 
@@ -87,7 +87,7 @@ Figure 4: Encrypting password of Switch0
 ![Figure 4](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%204%20Encrypting%20password%20of%20Switch0.png)
 
 |Command	|Purpose|
-|---------|--------|
+|:---------|:--------|
 |no enable password |removes the existing plaintext password stored in a configuration file.|
 |enable secret |defines a secret password and encrypts it.|
 
@@ -132,7 +132,7 @@ Figure 9: Setting up a password for Router0
 
 
 |Command	|Purpose|
-|---------|-------|
+|:---------|:-------|
 |en |moves the session from user EXEC mode (Router>) to privileged EXEC mode (Router#) in order to execute higher-level commands, including configuration commands.|
 |conf t |enters global configuration mode.|
 |line console 0 |configures the console line, which is used for local management access to the router via the console port.|
@@ -156,7 +156,7 @@ Figure 10: Encrypting password of Router0 </br>
 
 
 |Command	|Purpose|
-|---------|-------|
+|:---------|:-------|
 |en | moves the session from user EXEC mode (Router>) to privileged EXEC mode (Router#) to execute higher-level commands, including configuration commands.|
 |conf t |enters global configuration mode.|
 |enable secret cisxo |sets the enable secret password to "cisxo".|
@@ -181,7 +181,7 @@ Static IP Configuration - assigning of a unique IP address to a network device.
 We will be assigning static IP addresses to the respective PCs on the network as per the table below:
 
 |PC  |IPv4 Address	|Subnet Mask	|VLAN	|Default Gateway|
-|----|--------------|-------------|-----|---------------|
+|:----|:--------------|:-------------|:-----|:---------------|
 |PC0|	10.10.10.1|	255.255.255.0|	10|	10.10.10.254|
 |PC1|	10.10.10.2|	255.255.255.0|	10|	10.10.10.254|
 |PC2|	10.10.20.1|	255.255.255.0|	20|	10.10.20.254|
@@ -228,7 +228,7 @@ Figure 17: Configuring Switch0 </br>
 
 
 |Command	|Purpose|
-|---------|-------|
+|:---------|:-------|
 |en |moves the session from user EXEC mode (Switch>) to privileged EXEC mode (Switch#) to execute higher-level commands, including configuration commands.|
 |conf t |enters global configuration mode, allowing system-wide changes to the switch’s settings.|
 |int fa0/1 |enters the interface configuration mode for FastEthernet0/1 (fa0/1) which connects to PC0.|
@@ -261,7 +261,7 @@ Figure 18: Configuring Router0 </br>
 
 
 |Command|Purpose|
-|-------|-------|
+|:-------|:-------|
 |en |moves the session from user EXEC mode (Router>) to privileged EXEC mode (Router#) to execute higher-level commands, including configuration commands.|
 |conf t |enters global configuration mode, allowing system-wide changes to the switch’s settings.|
 |int gig0/0 |enters the interface configuration mode for GigabitEthernet0/0 (gig0/0) which connects to Switch0.|
@@ -315,7 +315,7 @@ Figure 25: Configuring DHCP protocol on Router0</br>
 ![f25](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2025%20Configuring%20DHCP%20protocol%20on%20Router0.png)</br>
 
 |Command|Purpose|
-|-------|-------|
+|:-------|:-------|
 |en |moves the session from user EXEC mode (Router>) to privileged EXEC mode (Router#) to execute higher-level commands, including configuration commands.|
 |conf t|enters global configuration mode, allowing system-wide changes to the switch’s settings.|
 |ip dhcp pool 1|creates a DHCP pool named "1" for dynamic IP allocation. This pool name is arbitrary and could be any name or number. DHCP pools define how IP addresses are distributed across network devices.|
@@ -366,7 +366,7 @@ Figure 32: Configuring port fa0/2 on Switch0</br>
 ![f32](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2032%20Configuring%20port%20fa02%20on%20Switch0.png)</br>
 
 |Command|Purpose|
-|-------|-------|
+|:-------|:-------|
 |en |moves the session from user EXEC mode (Switch>) to privileged EXEC mode (Switch#) to execute higher-level commands, including configuration commands.|
 |conf t|enters global configuration mode, allowing system-wide changes to the switch’s settings.|
 |int fa0/2|enters the interface configuration mode for FastEthernet0/2 (fa0/2) which connects to PC1.|
