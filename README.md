@@ -334,7 +334,7 @@ Figure 29: Network topology showing unauthorized access by an attacker via Lapto
 ![f29](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2029%20Network%20topology%20showing%20unauthorized%20access%20by%20an%20attacker%20via%20laptop0.png)</br> 
 </br></br> 
 
-Using Laptop0, the attacker managed to get a dynamically assigned IP address using DHCP configuration. 
+Using Laptop0, the attacker managed to get a dynamically assigned IP address using DHCP configuration.  
 </br></br> 
 Figure 30: Attacker's Laptop0 IP configuration using DHCP</br>
 ![f30](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2030%20Attacker's%20Laptop0%20IP%20configuration%20using%20DHCP.png)</br> 
