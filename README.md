@@ -199,22 +199,22 @@ We will repeat the same steps to configure both the IPv4 addresses and Default G
 With the current IP address configuration, only PCs in the same VLAN are able to communicate with each other. 
 For PCs to be able to communicate with PCs on another VLAN, a router would be needed.
 
-We shall now test the connectivity between PCs on the same VLAN.
-
-Figure 16: Test connectivity result of PC0 on VLAN 10 and VLAN 20 </br>
+We shall now test the connectivity between PCs on the same VLAN. 
+</br></br> 
+Figure 16: Test connectivity result of PC0 on VLAN 10 and VLAN 20  
 ![f16](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2016%20Test%20connectivity%20result%20of%20PC0%20on%20VLAN%2010%20and%20VLAN%2020.png)
-
+</br></br> 
 
 As evidenced by the successful ping, PC0 (10.10.10.1) is able to establish a connection with PC1 (10.10.10.2) on VLAN 10. 
 However,  PC0 (10.10.10.1) is unable to do so with PC2 (10.10.20.1) on VLAN 20 due to network segmentation.
 
 We shall now attempt to fix this by establishing connectivity between the 2 VLANs.
 
-First, we will need to configure Switch0.
-
-Figure 17: Configuring Switch0 </br>
+First, we will need to configure Switch0. 
+</br></br> 
+Figure 17: Configuring Switch0  
 ![f17](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2017%20Configuring%20Switch0.png)
-
+</br></br> 
 
 
 |Command	|Purpose|
@@ -244,11 +244,11 @@ Network Security & Efficiency
 - VLANs reduce broadcast domains, improving network efficiency.
 - Trunking ensures VLAN communication while maintaining segmentation.
 
-Next, we shall configure Router0 to establish connectivity between Switch0 and Router0.
-
-Figure 18: Configuring Router0 </br>
+Next, we shall configure Router0 to establish connectivity between Switch0 and Router0. 
+</br></br> 
+Figure 18: Configuring Router0  
 ![f18](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2018%20Configuring%20Router0.png)
-
+</br></br> 
 
 |Command|Purpose|
 |:-------|:-------|
