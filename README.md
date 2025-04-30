@@ -116,15 +116,14 @@ Figure 7: Encrypted password of Switch1
 
 #### <ins>Task 3: Apply authentication on the router</ins>
 
-In this task, we will install a router model 2911 between Switch0 and Switch1. A router is a key network device on any network topology, and we will implement password authentication as an access control measure.
-
-Figure 8: Network topology with Router0
+In this task, we will install a router model 2911 between Switch0 and Switch1. A router is a key network device on any network topology, and we will implement password authentication as an access control measure.  
+</br></br> 
+Figure 8: Network topology with Router0  
 ![F8](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%208%20Network%20topology%20with%20Router0.png)
-
-Figure 9: Setting up a password for Router0
-
+</br></br> 
+Figure 9: Setting up a password for Router0  
 ![f9](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%209%20Setting%20up%20a%20password%20for%20Router0.png)  
-
+</br></br> 
 
 |Command	|Purpose|
 |:---------|:-------|
