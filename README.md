@@ -263,35 +263,35 @@ Figure 18: Configuring Router0
 |int fa0/3 |enters the interface configuration mode for FastEthernet0/3 (fa0/3).|
 |Switchport mode trunk |configures FastEthernet0/3 (fa0/3) as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
 
-The commands for establishing connectivity between Switch1 and Router0 are as follows:
-
+The commands for establishing connectivity between Switch1 and Router0 are as follows:  
+</br></br> 
 Figure 19: Configuration Switch1 </br>
-![f19](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2019%20Configuration%20Switch1.png)</br>
-
+![f19](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2019%20Configuration%20Switch1.png)</br> 
+</br></br> 
 Figure 20: Configuration of Router0 to establish connectivity with Switch1</br>
-![f20](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2020%20Configuration%20of%20Router0%20to%20establish%20connectivity%20with%20Switch1.png)</br>
-
-Connectivity test performed on PCs within the same network segment VLAN 10:
-
+![f20](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2020%20Configuration%20of%20Router0%20to%20establish%20connectivity%20with%20Switch1.png)</br> 
+</br></br> 
+Connectivity test performed on PCs within the same network segment VLAN 10:  
+</br></br> 
 Figure 21: Connectivity test from PC1 to PC0 within same VLAN 10</br>
-![f21](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2021%20Connectivity%20test%20from%20PC1%20to%20PC0%20within%20same%20VLAN%2010.png)</br>
-
-Connectivity test performed on PCs within the same network segment VLAN 20:
-
+![f21](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2021%20Connectivity%20test%20from%20PC1%20to%20PC0%20within%20same%20VLAN%2010.png)</br> 
+</br></br> 
+Connectivity test performed on PCs within the same network segment VLAN 20:  
+</br></br> 
 Figure 22: Connectivity test from PC3 to PC2 within same VLAN 20</br>
-![f22](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2022%20Connectivity%20test%20from%20PC3%20to%20PC2%20within%20same%20VLAN%2020.png)</br>
-
-Connectivity test from PC0 on VLAN 10 to PC2 (10.10.20.1) and PC3 (10.10.20.2)  on VLAN 20:
-
+![f22](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2022%20Connectivity%20test%20from%20PC3%20to%20PC2%20within%20same%20VLAN%2020.png)</br> 
+</br></br> 
+Connectivity test from PC0 on VLAN 10 to PC2 (10.10.20.1) and PC3 (10.10.20.2)  on VLAN 20:  
+</br></br> 
 Figure 23: Connectivity test from PC0 to PC2 and PC3</br>
-![f23](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2023%20Connectivity%20test%20from%20PC0%20to%20PC2%20and%20PC3.png)</br>
-
-Connectivity test from PC2 on VLAN 20 to PC0 (10.10.10.1) and PC1 (10.10.10.2)  on VLAN 10:
-
+![f23](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2023%20Connectivity%20test%20from%20PC0%20to%20PC2%20and%20PC3.png)</br> 
+</br></br> 
+Connectivity test from PC2 on VLAN 20 to PC0 (10.10.10.1) and PC1 (10.10.10.2)  on VLAN 10:  
+</br></br> 
 Figure 24: Connectivity test from PC2 to PC0 and PC1</br>
-![f24](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2024%20Connectivity%20test%20from%20PC2%20to%20PC0%20and%20PC1.png)</br>
-
-These connectivity tests concluded that:
+![f24](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2024%20Connectivity%20test%20from%20PC2%20to%20PC0%20and%20PC1.png)</br> 
+</br></br> 
+These connectivity tests concluded that: 
 1. PCs on the same VLAN can communicate with each other.
 2. PCs on VLAN 10 can communicate with PCs on VLAN 20.
  </br> </br> </br>
