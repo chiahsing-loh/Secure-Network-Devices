@@ -294,16 +294,16 @@ Figure 24: Connectivity test from PC2 to PC0 and PC1</br>
 These connectivity tests concluded that: 
 1. PCs on the same VLAN can communicate with each other.
 2. PCs on VLAN 10 can communicate with PCs on VLAN 20.
- </br> </br> </br>
+ </br> </br> </br> 
 
 
 #### <ins>Task 5: Configure DHCP on the router and secure the ports of the switch from unauthorized access</ins>
 
-The following commands configure Dynamic Host Configuration Protocol (DHCP) on router0, allowing it to assign IP addresses dynamically to network devices. Let’s break down each step.
-
+The following commands configure Dynamic Host Configuration Protocol (DHCP) on router0, allowing it to assign IP addresses dynamically to network devices. Let’s break down each step. 
+</br></br> 
 Figure 25: Configuring DHCP protocol on Router0</br>
-![f25](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2025%20Configuring%20DHCP%20protocol%20on%20Router0.png)</br>
-
+![f25](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2025%20Configuring%20DHCP%20protocol%20on%20Router0.png)</br> 
+</br></br> 
 |Command|Purpose|
 |:-------|:-------|
 |en |moves the session from user EXEC mode (Router>) to privileged EXEC mode (Router#) to execute higher-level commands, including configuration commands.|
@@ -314,47 +314,45 @@ Figure 25: Configuring DHCP protocol on Router0</br>
 
 Once DHCP was configured, Router0 would dynamically assigns an IP addresses from the 10.10.10.0/24 subnet when a device requests an IP address.
 
-Changing IP configuration from static allocation to DHCP allocation on PC0:
-
-
+Changing IP configuration from static allocation to DHCP allocation on PC0: 
+</br></br> 
 Figure 26: Current IP configuration for PC0</br>
-![f26](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2026%20Current%20IP%20configuration%20for%20PC0.png)</br>
-
+![f26](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2026%20Current%20IP%20configuration%20for%20PC0.png)</br> 
+</br></br> 
 Figure 27: IP configuration for PC0 using DHCP</br>
-![f27](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2027%20IP%20configuration%20for%20PC0%20using%20%20DHCP.png)</br>
-
-Similarly, DHCP configuration was made to PC1 as depicted in Figure 28.
-
+![f27](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2027%20IP%20configuration%20for%20PC0%20using%20%20DHCP.png)</br> 
+</br></br> 
+Similarly, DHCP configuration was made to PC1 as depicted in Figure 28. 
+</br></br> 
 Figure 28: IP configuration for PC1 using DHCP</br>
-![f28](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2028%20IP%20configuration%20for%20PC1%20using%20DHCP.png)</br>
+![f28](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2028%20IP%20configuration%20for%20PC1%20using%20DHCP.png)</br> 
+</br></br> 
 
-
-Suppose an attacker attempts to get information from this network and aims to destroy it subsequently. For this attempt, the attacker uses laptop0 to connect to port fa0/2 on Switch0 as depicted in Figure 29.
-
-
+Suppose an attacker attempts to get information from this network and aims to destroy it subsequently. For this attempt, the attacker uses laptop0 to connect to port fa0/2 on Switch0 as depicted in Figure 29. 
+</br></br> 
 Figure 29: Network topology showing unauthorized access by an attacker via Laptop0</br>
-![f29](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2029%20Network%20topology%20showing%20unauthorized%20access%20by%20an%20attacker%20via%20laptop0.png)</br>
+![f29](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2029%20Network%20topology%20showing%20unauthorized%20access%20by%20an%20attacker%20via%20laptop0.png)</br> 
+</br></br> 
 
-
-Using Laptop0, the attacker managed to get a dynamically assigned IP address using DHCP configuration.
-
+Using Laptop0, the attacker managed to get a dynamically assigned IP address using DHCP configuration. 
+</br></br> 
 Figure 30: Attacker's Laptop0 IP configuration using DHCP</br>
-![f30](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2030%20Attacker's%20Laptop0%20IP%20configuration%20using%20DHCP.png)</br>
-
-The attacker uses the "ping" command to test his unauthorized access and establishes a successful connection with PC0, as shown in Figure 31.
-
+![f30](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2030%20Attacker's%20Laptop0%20IP%20configuration%20using%20DHCP.png)</br> 
+</br></br> 
+The attacker uses the "ping" command to test his unauthorized access and establishes a successful connection with PC0, as shown in Figure 31. 
+</br></br> 
 Figure 31: Connectivity achieved by attacker's Laptop0</br>
-![f31](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2031%20Connectivity%20achieved%20by%20attacker's%20Laptop0.png)</br>
-
-To prevent unauthorized access, we must secure the switches' ports through the following steps.
+![f31](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2031%20Connectivity%20achieved%20by%20attacker's%20Laptop0.png)</br> 
+</br></br> 
+To prevent unauthorized access, we must secure the switches' ports through the following steps. 
 
 In our network topology, we only want 1 PC to have access to Switch0 via port fa0/2.
 
-Here are the commands to configure port security on port fa0/2 to prevent unauthorized access and enhance network security.
-
+Here are the commands to configure port security on port fa0/2 to prevent unauthorized access and enhance network security.  
+</br></br> 
 Figure 32: Configuring port fa0/2 on Switch0</br>
-![f32](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2032%20Configuring%20port%20fa02%20on%20Switch0.png)</br>
-
+![f32](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2032%20Configuring%20port%20fa02%20on%20Switch0.png)</br> 
+</br></br> 
 |Command|Purpose|
 |:-------|:-------|
 |en |moves the session from user EXEC mode (Switch>) to privileged EXEC mode (Switch#) to execute higher-level commands, including configuration commands.|
@@ -368,15 +366,16 @@ Figure 32: Configuring port fa0/2 on Switch0</br>
 |int fa0/3|enters the interface configuration mode for FastEthernet0/3 (fa0/3).|
 |Switchport mode trunk|configures FastEthernet0/3 (fa0/3) as a trunk port. Unlike access mode, trunk mode allows multiple VLANs to pass through. A trunk port is typically used for inter-switch communication or connecting to a router for VLAN routing. Hence, FastEthernet0/3 (fa0/3) can transport traffic for VLAN 10 and other VLANs.|
 
-Similar security hardening was also made on port fa0/1 on Switch0:
-
+Similar security hardening was also made on port fa0/1 on Switch0:  
+</br></br> 
 Figure 33: Configuring port fa0/1 on Switch0</br>
-![f33](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2033%20Configuring%20port%20fa01%20on%20Switch0.png)</br>
+![f33](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2033%20Configuring%20port%20fa01%20on%20Switch0.png)</br> 
+</br></br> 
+The above steps enhanced Switch0's port security by limiting access to specific devices, preventing MAC address spoofing attacks, and automatically shutting down unauthorized access. 
 
-The above steps enhanced Switch0's port security by limiting access to specific devices, preventing MAC address spoofing attacks, and automatically shutting down unauthorized access.
 
-
-A subsequent attempt to reconnect Laptop1 to port fa0/2 on Switch0 is denied. Hence, the access control made on Switch0 port fa0/2 has been strengthened against unauthorized access.
-
+A subsequent attempt to reconnect Laptop1 to port fa0/2 on Switch0 is denied. Hence, the access control made on Switch0 port fa0/2 has been strengthened against unauthorized access. 
+</br></br> 
 Figure 34: Failed connectivity of attacker's Laptop1</br>
-![f34](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2034%20Failed%20connectivity%20of%20attacker's%20Laptop1.png)</br>
+![f34](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2034%20Failed%20connectivity%20of%20attacker's%20Laptop1.png)</br> 
+</br></br> 
