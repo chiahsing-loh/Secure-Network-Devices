@@ -36,8 +36,7 @@ This project will consist of 5 tasks, which are as follows:
 
 #### <ins>Task 1: Create a network topology using Cisco Packet Tracer</ins>
 We will use Cisco Packet Tracer to design and create a network topology that consists of 2 switches connected with 2 PCs each, as in Figure 1. 
-
-
+</br></br> 
 Figure 1: A network topology consisting of switches and PCs  
 ![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%201.png)
 </br></br></br>
