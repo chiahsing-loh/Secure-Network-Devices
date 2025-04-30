@@ -35,7 +35,7 @@ This project will consist of 5 tasks, which are as follows:
 
 
 #### <ins>Task 1: Create a network topology using Cisco Packet Tracer</ins>
-We will use Cisco Packet Tracer to design and create a network topology that consists of 2 switches connected with 2 PCs each, as in Figure 1. 
+We will use Cisco Packet Tracer to design and create a network topology that consists of 2 switches connected with 2 PCs each, as in Figure 1.  
 </br></br> 
 Figure 1: A network topology consisting of switches and PCs  
 ![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%201.png)
@@ -47,8 +47,7 @@ In network security, authentication is the process of verifying the identity of 
 To implement network security on this topology, we shall implement passwords for the network devices to prevent unauthorized users from accessing this network.
 
 We will use the following commands to assign the password 'apple' to switch0 in privileged EXEC mode:  
-
-
+</br></br> 
 Figure 2: Setting a password for Switch0  
 ![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%202%20Setting%20a%20password%20for%20Switch0.png) 
 </br></br>
