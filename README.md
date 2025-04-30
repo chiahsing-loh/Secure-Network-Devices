@@ -37,7 +37,8 @@ This project will consist of 5 tasks, which are as follows:
 #### <ins>Task 1: Create a network topology using Cisco Packet Tracer</ins>
 We will use Cisco Packet Tracer to design and create a network topology that consists of 2 switches connected with 2 PCs each, as in Figure 1. 
 
-Figure 1: A network topology consisting of switches and PCs
+
+Figure 1: A network topology consisting of switches and PCs </br></br>
 ![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%201.png)
 </br></br></br>
 
@@ -46,7 +47,8 @@ In network security, authentication is the process of verifying the identity of 
 
 To implement network security on this topology, we shall implement passwords for the network devices to prevent unauthorized users from accessing this network.
 
-We will use the following commands to assign the password 'apple' to switch0 in privileged EXEC mode:
+We will use the following commands to assign the password 'apple' to switch0 in privileged EXEC mode:  
+
 
 Figure 2: Setting a password for Switch0
 
@@ -60,7 +62,8 @@ Figure 2: Setting a password for Switch0
 |exit	|exits current mode (global configuration or privileged EXEC)|
 </br>
 
-The following commands are used to verify and view the password set for switch0:
+The following commands are used to verify and view the password set for switch0:  
+
 
 Figure 3: Verification of password at Switch0
 
@@ -80,10 +83,10 @@ The statement "enable password apple" was listed amongst the configuration detai
 Key observations:
 The implemented password protection served as a simple way of providing terminal access control in a network. However, the password was being stored as plaintext and would be vulnerable to unauthorized access. For stronger security, an <enable secret> command  should be used instead—it encrypts the password and overrides the plaintext enable password.
 
-We will now seek to rectify this to an encrypted password through the following steps:
+We will now seek to rectify this to an encrypted password through the following steps:  
 
-Figure 4: Encrypting password of Switch0
 
+Figure 4: Encrypting password of Switch0 </br></br>
 ![Figure 4](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%204%20Encrypting%20password%20of%20Switch0.png)
 
 |Command	|Purpose|
@@ -93,8 +96,7 @@ Figure 4: Encrypting password of Switch0
 
 The <no enable password> command will disable the existing, less secure plaintext password for accessing the privileged EXEC mode. The <enable secret> command is a more secure, encrypted password for privileged EXEC mode. It will supersede the <enable password> if both are configured. Using encryption provides much better protection against unauthorized access.
 
-Figure 5: Encrypted password of Switch0
-
+Figure 5: Encrypted password of Switch0 </br></br>
 ![Figure 5](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%205%20Encrypted%20password%20of%20Switch0.png)
 
 The above figure shows the resulting configuration:
