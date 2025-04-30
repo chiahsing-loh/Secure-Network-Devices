@@ -38,7 +38,7 @@ This project will consist of 5 tasks, which are as follows:
 We will use Cisco Packet Tracer to design and create a network topology that consists of 2 switches connected with 2 PCs each, as in Figure 1. 
 
 
-Figure 1: A network topology consisting of switches and PCs </br></br>
+Figure 1: A network topology consisting of switches and PCs  
 ![Figure 1](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%201.png)
 </br></br></br>
 
@@ -50,9 +50,9 @@ To implement network security on this topology, we shall implement passwords for
 We will use the following commands to assign the password 'apple' to switch0 in privileged EXEC mode:  
 
 
-Figure 2: Setting a password for Switch0
-
-![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%202%20Setting%20a%20password%20for%20Switch0.png)
+Figure 2: Setting a password for Switch0  
+![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%202%20Setting%20a%20password%20for%20Switch0.png) 
+</br></br>
 
 |Command	|Purpose|
 |:---------|:--------|
@@ -86,8 +86,9 @@ The implemented password protection served as a simple way of providing terminal
 We will now seek to rectify this to an encrypted password through the following steps:  
 
 
-Figure 4: Encrypting password of Switch0 </br></br>
+Figure 4: Encrypting password of Switch0  
 ![Figure 4](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%204%20Encrypting%20password%20of%20Switch0.png)
+
 
 |Command	|Purpose|
 |:---------|:--------|
