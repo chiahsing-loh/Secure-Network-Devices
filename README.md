@@ -90,11 +90,11 @@ Figure 4: Encrypting password of Switch0
 |no enable password |removes the existing plaintext password stored in a configuration file.|
 |enable secret |defines a secret password and encrypts it.|
 
-The <no enable password> command will disable the existing, less secure plaintext password for accessing the privileged EXEC mode. The <enable secret> command is a more secure, encrypted password for privileged EXEC mode. It will supersede the <enable password> if both are configured. Using encryption provides much better protection against unauthorized access.
-
-Figure 5: Encrypted password of Switch0 </br></br>
+The <no enable password> command will disable the existing, less secure plaintext password for accessing the privileged EXEC mode. The <enable secret> command is a more secure, encrypted password for privileged EXEC mode. It will supersede the <enable password> if both are configured. Using encryption provides much better protection against unauthorized access.  
+</br></br> 
+Figure 5: Encrypted password of Switch0  
 ![Figure 5](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%205%20Encrypted%20password%20of%20Switch0.png)
-
+</br></br> 
 The above figure shows the resulting configuration:
 - The plaintext enable password was removed, thereby improving security.
 - The password apple was being encrypted into "$1$mERr$KA3NlZC09aPz89f9oGpKe1"
