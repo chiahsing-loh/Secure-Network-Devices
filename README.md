@@ -142,12 +142,11 @@ The error message "% Login disabled on line 0, until 'password' is set" indicate
 
 We had set "cisco" as the password required for accessing the console line during future login attempts.
 
-The above console line configuration successfully enabled login authentication for the router console line. The plaintext password "cisco" was configured, allowing access to Router0's CLI via the console.
-
-
-Figure 10: Encrypting password of Router0 </br>
-![f10](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2010%20Encrypting%20password%20of%20Router0.png)
-
+The above console line configuration successfully enabled login authentication for the router console line. The plaintext password "cisco" was configured, allowing access to Router0's CLI via the console.  
+</br></br> 
+Figure 10: Encrypting password of Router0  
+![f10](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2010%20Encrypting%20password%20of%20Router0.png) 
+</br></br> 
 
 |Command	|Purpose|
 |:---------|:-------|
@@ -160,9 +159,9 @@ Figure 10: Encrypting password of Router0 </br>
 The command <enable secret cisxo> stores the password "cisxo" in an encrypted format, making it far more secure against unauthorized access to privileged EXEC mode.
 
 
-Next, we will change the passwords to "orange" for both console access and privileged EXEC mode as a practice. The configuration changes are detailed in Figure 11.
-
-Figure 11: Changing password and encrypting it on Router0 </br>
+Next, we will change the passwords to "orange" for both console access and privileged EXEC mode as a practice. The configuration changes are detailed in Figure 11.  
+</br></br> 
+Figure 11: Changing password and encrypting it on Router0  
 ![f11](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2011%20Changing%20password%20and%20encrypting%20it%20on%20Router0.png)
  </br> </br> </br>
 
@@ -181,22 +180,19 @@ We will be assigning static IP addresses to the respective PCs on the network as
 |PC2|	10.10.20.1|	255.255.255.0|	20|	10.10.20.254|
 |PC3|	10.10.20.2|	255.255.255.0|	20|	10.10.20.254|
 
-
-Figure 12: Accessing IP configuration via the Desktop interface on PC0
+</br></br> 
+Figure 12: Accessing IP configuration via the Desktop interface on PC0  
 ![f12](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2012%20Accessing%20IP%20configuration%20via%20the%20Desktop%20interface%20on%20PC0.png)
-
-
-Figure 13:  Initial IP configuration of PC0
+</br></br> 
+Figure 13:  Initial IP configuration of PC0  
 ![f13](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2013%20Initial%20IP%20configuration%20of%20PC0.png)
-
-
-Figure 14: Static assigned IP configuration of PC0 on VLAN 10
+</br></br> 
+Figure 14: Static assigned IP configuration of PC0 on VLAN 10  
 ![f14](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2014%20Static%20assigned%20IP%20configuration%20of%20PC0%20on%20VLAN%2010.png)
-
-
-Figure 15: Static assigned IP configuration of PC2 on VLAN 20
-![f15](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2015%20Static%20assigned%20IP%20configuration%20of%20PC2%20on%20VLAN%2020.png)
-
+</br></br> 
+Figure 15: Static assigned IP configuration of PC2 on VLAN 20  
+![f15](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%2015%20Static%20assigned%20IP%20configuration%20of%20PC2%20on%20VLAN%2020.png) 
+</br></br> 
 
 We will repeat the same steps to configure both the IPv4 addresses and Default Gateway for PC1, PC2, and PC3.
 
