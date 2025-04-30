@@ -103,18 +103,15 @@ The above figure shows the resulting configuration:
 Security Perspective:
 By replacing the <enable password> with the encrypted <enable secret>, switch0 is more secure against attacks that rely on password cracking or interception. This is a key best practice for securing access to a network or network devices.
 
-Next, we will implement the same on Switch1 using the same encrypted "apple" password.
-
-Configuring Switch1:
-
-Figure 6: Setting up encrypted password for Switch1
-
+Similarly, we will configure Switch1 using the same encrypted "apple" password.  
+</br></br> 
+Figure 6: Setting up encrypted password for Switch1  
 ![Figure 6](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%206%20Setting%20up%20encrypted%20password%20for%20Switch1.png)
+</br></br> 
 
-
-Figure 7: Encrypted password of Switch1
-
+Figure 7: Encrypted password of Switch1  
 ![Figure 7](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/figure%207%20Encrypted%20password%20of%20Switch1.png)
+</br></br></br> 
 
 
 #### <ins>Task 3: Apply authentication on the router</ins>
@@ -126,7 +123,7 @@ Figure 8: Network topology with Router0
 
 Figure 9: Setting up a password for Router0
 
-![f9](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%209%20Setting%20up%20a%20password%20for%20Router0.png)
+![f9](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%209%20Setting%20up%20a%20password%20for%20Router0.png)  
 
 
 |Command	|Purpose|
