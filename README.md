@@ -46,7 +46,7 @@ In network security, authentication is the process of verifying the identity of 
 
 To implement network security on this topology, we shall implement passwords for the network devices to prevent unauthorized users from accessing this network.
 
-We will use the following commands to assign the password 'apple' to switch0 in privileged EXEC mode:  
+We will use the following commands to assign the password 'apple' to switch0 in privileged EXEC mode as shown in Figure 2.  
 </br></br> 
 Figure 2: Setting a password for Switch0  
 ![Figure 2](https://github.com/chiahsing-loh/Secure-Network-Devices/blob/main/images/Figure%202%20Setting%20a%20password%20for%20Switch0.png) 
@@ -76,7 +76,7 @@ After entering the correct password "apple", we will invoke the `show run` comma
 
 The statement `enable password apple` was listed amongst the configuration details, confirming that the word "apple" was being stored as a plaintext password for accessing privileged EXEC mode.
 
-Key observations:
+Key observations:  
 The implemented password protection served as a simple way of providing terminal access control in a network. However, the password was being stored as plaintext and would be vulnerable to unauthorized access. For stronger security, an `enable secret` command  should be used instead — it encrypts the password and overrides the plaintext enable password.
 
 We will now rectify it an encrypted password through the following steps:  
@@ -98,9 +98,9 @@ Figure 5: Encrypted password of Switch0
 The above figure shows the resulting configuration:
 - The plaintext enable password was removed, thereby improving security.
 - The password apple was being encrypted into `$1$mERr$KA3NlZC09aPz89f9oGpKe1`
-- The switch uses the encrypted enable secret password for privileged EXEC mode access.
+- Switch0 uses the encrypted enable secret password for privileged EXEC mode access.
 
-Security Perspective:
+Security Perspective:  
 By replacing the `enable password` with the encrypted `enable secret`, switch0 is more secure against attacks that rely on password cracking or interception. This is a key best practice for securing access to a network or network devices.
 
 Similarly, we will configure Switch1 using the same encrypted "apple" password.  
